@@ -38,10 +38,9 @@ main {
 .avatar {
   width: 10rem;
   margin: 11.5rem auto 0;
-  position: relative; 
+  position: relative;
   /* transforma essa div em referencia de espaçamento,etc.. para as divs dentro dela */
 }
-
 .avatar span {
   position: absolute;
   /* cria uma ordem de camdas, uma indo por cima ou por baixo da outra */
@@ -49,7 +48,6 @@ main {
   z-index: 1;
   /* gera o ordenamento de camadas no eixo z(profundidade) */
 }
-
 .avatar > img {
   width: 10rem;
   height: 11.5rem;
@@ -62,9 +60,33 @@ main {
 
 h1 {
   font-size: 1.5rem;
+
+  margin-top: 1.5rem;
 }
 
 a {
-  color: black;
+  color: var(--grey);
   text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  /* define o tipo de lista (numérica,alfabetica, etc)  */
+  padding: 0;
+  display: flex;
+
+  gap: 0.5rem;
+  justify-content: center;
+  /* o display tipo flex permite configurações como o "gap" e "justify-content" */
 }
