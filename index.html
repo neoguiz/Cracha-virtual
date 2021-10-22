@@ -22,12 +22,12 @@
             <img src="images/rocketseat.svg" alt="Selo Rocketseat" />
           </span>
           <img
-            src="https://lorempixel.com/185/185/people/"
+            src="https://avatars.githubusercontent.com/u/90660406?s=400&u=9ba4d34dd60af0109e2f8e8428472a7a5b6ff155&v=4"
             alt="Foto pessoal"
           />
         </div>
 
-        <h1>Guilherme Dias</h1>
+        <h1 id="username">Guilherme Dias</h1>
         <a href="" target="_blank">
           <img src="images/github.svg" alt="Ícone GitHub" />
           neo.guiz
@@ -35,23 +35,23 @@
 
         <p>An instructor focused on helping pople start programming for web</p>
 
-        <ul>
-          <li>
+        <ul id="socialLinks">
+          <li class="instagram">
             <a href="https://www.instagram.com/neo.guiz/" target="_blank">
               <img src="images/instagram.svg" alt="Icone Instagram" />
             </a>
           </li>
-          <li>
+          <li class="youtube">
             <a href="https://youtube.com" target="_blank">
               <img src="images/youtube.svg" alt="Icone Youtube" />
             </a>
           </li>
-          <li>
+          <li class="twitter">
             <a href="https://twitter.com/amomulhersafada" target="_blank">
               <img src="images/twitter.svg" alt="Icone Twitter" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a href="https://facebook.com" target="_blank">
               <img src="images/facebook.svg" alt="Icone Facebook" />
             </a>
@@ -61,8 +61,12 @@
     </main>
 
     <script>
-      function showMeSomething() {
-        alert()
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          let social = li.getAttribute('class')
+
+          li.children[0].href = `https://${social}.com/${links[social]}`
+        }
       }
 
       const links = {
@@ -73,7 +77,7 @@
         twitter: 'amomulhersafada'
       }
 
-      showMeSomething()
+      changeSocialMediaLinks()
     </script>
   </body>
 </html>
