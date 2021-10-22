@@ -16,6 +16,4 @@ const links = {
 
 changeSocialMediaLinks()
 
-function getGitHubProfileInfos(){
-  
-}
+function getGitHubProfileInfos() {}
