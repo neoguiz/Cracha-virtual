@@ -17,7 +17,7 @@ body {
 body {
   display: grid;
   place-items: center;
-  background: lightblue;
+  background: rgb(37, 37, 37);
 }
 
 main {
