@@ -21,10 +21,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg) ;
+  background: url(images/background.svg) no-repeat center/cover;
   min-height: 812px;
   width: 100vw;
-  height: 100vh;
+  height: 173vh;
 }
 
 .container {
@@ -89,4 +89,10 @@ ul {
   gap: 0.5rem;
   justify-content: center;
   /* o display tipo flex permite configurações como o "gap" e "justify-content" */
+}
+
+#dowhileLogo {
+  margin-top: 2rem;
+  align-self: left;
+  width: 15rem;
 }
