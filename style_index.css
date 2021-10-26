@@ -4,6 +4,8 @@
   margin: 0;
 }
 
+@media screen and (min-width: 960px) {
+
 html,
 body {
   height: 100%;
@@ -24,11 +26,11 @@ main {
   background: url(images/background.svg) no-repeat center/cover;
   min-height: 812px;
   width: 100vw;
-  height: 173vh;
+  height: 100vh;
 }
 
 .container {
-  max-width: 250px;
+  /* max-width: 250px; */
   margin-left: auto;
   margin-right: auto;
   margin-top: -6rem;
@@ -37,7 +39,7 @@ main {
 }
 
 .avatar {
-  width: 10rem;
+  /* width: 10rem; */
   margin: 11.5rem auto 0;
   position: relative;
   /* transforma essa div em referencia de espaçamento,etc.. para as divs dentro dela */
@@ -96,4 +98,44 @@ ul {
   margin-top: 2rem;
   align-self: left;
   width: 15rem;
+}
+
+}
+
+
+
+@media screen and (min-width: 450px) {
+  main {
+    background: url(images/background.svg) no-repeat center/cover;
+    min-height: 812px;
+  }
+
+  .container {
+    height: 90vh;
+    width: 80vw;
+  }
+
+  .avatar {
+    margin-top: 28.8vh;
+    position: relative;
+  }
+
+  .avatar span img{
+    position: absolute; 
+    height: 7vh;
+  }
+
+  /* esse modelo escolhe a primeira imagem dentro de .avatar */
+  .avatar > img {
+    clip-path: polygon(50% 0, 90% 25%, 90% 75%, 50% 100%, 10% 75%, 10% 25%);
+    /* gera uma clipagem semelhante com a função do photoshop */
+
+    height: 20vh;
+    width: auto;
+  }
+
+  #UserProfile {
+    /* width: 30vw;
+    height: 30vh; */
+  }
 }
