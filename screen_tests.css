@@ -1,5 +1,7 @@
 /* Cascating Stylesheet */
 
+/* Cascating Stylesheet */
+
 * {
   margin: 0;
 }
@@ -21,7 +23,11 @@ body {
 }
 
 main {
-  background: url(images/background.svg) no-repeat center/cover;
+  background-image: url(images/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
   min-height: 812px;
   width: 100vw;
   height: 100vh;
@@ -38,7 +44,7 @@ main {
 
 .avatar {
   /* width: 10rem; */
-  margin: 11.5rem auto 0;
+  margin: 35vh auto 0;
   position: relative;
   /* transforma essa div em referencia de espaçamento,etc.. para as divs dentro dela */
 }
@@ -98,28 +104,24 @@ ul {
   width: 15rem;
 }
 
-
-
-
-
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   main {
     background: url(images/background.svg) no-repeat center/cover;
-    min-height: 812px;
+    max-height: 812px;
   }
 
   .container {
-    height: 9vh;
+    height: 65vh;
     width: 80vw;
   }
 
   .avatar {
-    margin-top: 10px;
+    margin-top: 97.2%;
     position: relative;
   }
 
-  .avatar span img{
-    position: absolute; 
+  .avatar span img {
+    position: absolute;
     height: 7vh;
   }
 
@@ -128,7 +130,7 @@ ul {
     clip-path: polygon(50% 0, 90% 25%, 90% 75%, 50% 100%, 10% 75%, 10% 25%);
     /* gera uma clipagem semelhante com a função do photoshop */
 
-    height: 20vh;
+    height: 45vw;
     width: auto;
   }
 

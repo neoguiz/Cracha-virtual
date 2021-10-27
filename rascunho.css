@@ -1,0 +1,40 @@
+@media only screen and (max-width: 450px) {
+
+  
+  main {
+    /* background: url(images/background.svg) no-repeat center/cover; */
+    background:rgb(37, 37, 37);
+    min-height: 812px;
+  }
+
+  .container {
+    height: 90vh;
+    width: 80vw;
+  }
+
+  .avatar {
+    margin-top: 28.8vh;
+    position: relative;
+  }
+
+  .avatar span img{
+    position: absolute; 
+    height: 7vh;
+  }
+
+  /* esse modelo escolhe a primeira imagem dentro de .avatar */
+  .avatar > img {
+    clip-path: polygon(50% 0, 90% 25%, 90% 75%, 50% 100%, 10% 75%, 10% 25%);
+    /* gera uma clipagem semelhante com a função do photoshop */
+
+    height: 20vh;
+    width: auto;
+  }
+
+  #UserProfile {
+    /* width: 30vw;
+    height: 30vh; */
+  }
+
+  
+}
